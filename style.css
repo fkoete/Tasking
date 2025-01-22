@@ -1010,7 +1010,8 @@ body{
 .why-choose .choose-right{
 	height:100%;
 	width:100%;
-	background-image:url('img/video-bg.jpg');
+	/*background-image:url('img/video-bg.jpg');*/
+	background-image: url('site_stock_images/pexels-mart-production-7709242_callcenteragent2.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -1080,16 +1081,17 @@ body{
 	text-align:center;
 	padding:100px 265px;
 }
-.call-action .content h2{
-	color:#fff;
-	font-size:32px;
-	font-weight:600;
-	line-height:46px;
+.call-action .content h3 {
+	color:#080707a2;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 42px;
+	margin-bottom: 20px;
 }
 .call-action .content p {
 	color: #fff;
-	margin: 30px 0px;
-	font-size: 15px;
+	margin: 20px 0px;
+	font-size: 18px;
 }
 .call-action .content .btn{
 	background:#fff;
@@ -4166,6 +4168,10 @@ body{
 	text-decoration:underline;
 	display:inline-block;
 	margin-left:4px;
+}
+
+.footer .copyright .copyright-content p{
+	font-size: 11px;
 }
 /*=========================
 	End Footer CSS

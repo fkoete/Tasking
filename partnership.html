@@ -20,7 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>Tasker247 - Faqs</title>
+        <title>Tasker247 - Become a Partner</title>
 		
 		<!-- Favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -207,56 +207,96 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<!--/ End Header Inner -->
 		</header>
 		<!-- End Header Area -->
-					
-		<!--Value Preposition Tasker Blog-->
-	<body>
+			
+<!-- Within partnership.html, modify the section as follows: -->
+<section>
+<div class="container my-5 partnership-models">
+    <h2 class="mb-4 text-center">Partnership Models Overview</h2>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Partnership Model</th>
+          <th>Overview</th>
+          <th>Investment/Commission Structure</th>
+          <th>Benefits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Service Providers</strong></td>
+          <td>
+            For individuals, students and businesses delivering virtual assistant or elderly care support services. Tasker247 is committed to addressing social needs by creating employment opportunities and offering flexible work arrangements.
+          </td>
+          <td>
+            Commission-based model with three different commission percentages (deducted from service fees) based on the service provided.
+          </td>
+          <td>
+            <ul>
+              <li>Access to a consistent referral network</li>
+              <li>Flexible service delivery with your existing infrastructure</li>
+              <li>Ongoing training and support in a rewarding field that makes a positive impact on society</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Jurisdictional Partners</strong></td>
+          <td>
+            For businesses or sole proprietors aiming to serve an entire province. Our two-tiered pricing model adapts to the size of the province, ensuring equitable access to our national brand and support.
+          </td>
+          <td>
+            <strong>Two-Tiered Pricing:</strong>
+            <ul>
+              <li><em>Smaller Provinces:</em> Nominal initiation fee and monthly support fee </li>
+              <li><em>Larger Provinces:</em> Adjusted initiation fee and monthly support fee based on regional size</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Exclusive territorial rights to maximize your market potential</li>
+              <li>Full access to our partner portal for uniform operations and national branding</li>
+              <li>Regular training and dedicated operational support</li>
+              <li>Leverage our brand’s social impact to drive community growth</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="cta">
+      <h3>Ready to Transform the Industry?</h3>
+      <p>Join us and help transform the way virtual assistant and elderly care services are delivered, making a positive social impact along the way.</p>
+      <button type="button" class="btn cta-btn" onclick="handleCTAClick()">Become a Partner</button>
+    </div>
+  </div>
+ 
+  <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function handleCTAClick() {
+    // Construct the mailto link with the subject and body
+    const recipient = "j.noko@tasker247.com"; // Replace with your email address
+    const subject = encodeURIComponent("Become a Partner Enquiries");
+    const body = encodeURIComponent("A user is interested in becoming a partner. Please find their details below:\n\n"); // You can add more details here if you collect them
 
-		<section class="faq section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Frequently Asked Questions</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="faq-content">
-							<details>
-								<summary>Can I change my plan later?</summary>
-								<p>Yes, you can upgrade or downgrade your plan at any time. Simply contact our support team, and we'll assist you with the process.</p>
-							</details>
-							<details>
-								<summary>What is the refund policy?</summary>
-								<p>We offer a 14-day money-back guarantee. If you're not satisfied with our services within the first 14 days, you can request a full refund.</p>
-							</details>
-							<details>
-								<summary>How do I get started with your services?</summary>
-								<p>Getting started is easy! Simply browse our services, choose a plan that fits your needs, and contact us to schedule a consultation. We'll guide you through the rest.</p>
-							</details>
-							<details>
-								<summary>What types of tasks can a virtual assistant handle?</summary>
-								<p>Our virtual assistants are highly versatile and can handle a wide range of tasks, including administrative support, data entry, customer service, social media management, scheduling, and more. We also offer specialized industry-specific virtual assistants.</p>
-							</details>
-							<details>
-								<summary>What kind of elderly care services do you offer?</summary>
-								<p>We provide a comprehensive range of elderly care services, including running errands, home-based care, recreational activities, meal preparation, and our unique 'Listening Ear' chat and talk line.</p>
-							</details>
-							<details>
-								<summary>How do you ensure the security and confidentiality of my data?</summary>
-								<p>Maintaining client security and confidentiality is of utmost importance to us. We have stringent security measures in place, including vetted employees/service providers and transparent business practices.</p>
-							</details>
-							 <details>
-								<summary>Are your pricing plans flexible?</summary>
-								<p>Yes, we offer flexible pricing plans to suit various needs and budgets. We have daily, weekly, and monthly options, as well as customized pricing for specific requirements.</p>
-							</details>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
+    const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoLink;
+  }
+</script>
+
+ <!-- Floating WhatsApp Chat Button -->
+ <a href="https://wa.me/27792505006?text=Hello!%20I%20need%20assistance%20with%20your%20services." class="floating-chat" target="_blank">
+	<i class="fa fa-phone"></i>
+  </a>
+<!-- jquery Min JS -->
+<script src="js/jquery.min.js"></script>
+
+  </section>
+
 		<!-- Start Newsletter Area -->
 		<section class="newsletter section">
 			<div class="container">

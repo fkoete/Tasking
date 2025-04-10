@@ -610,8 +610,10 @@ body {
 .slider .single-slider {
   height: 600px;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
+  /* aspect-ratio: 16 / 9;*/
+  /* padding-top: 56.25%;*/
 }
 .slider .single-slider .text {
   margin-top: 100px;
@@ -1085,6 +1087,38 @@ body {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
+/***.choose-right {
+  position: relative;***/ /* Needed for absolute positioning of the video */
+/***}
+
+.choose-right .video-image {
+  width: 100%;
+  height: 100%; /* Ensure the container is large enough */
+/***overflow: hidden;***/ /* Hide any overflow from the background image */
+/***}
+
+.choose-right .video-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("site_stock_images/4484265-uhd_3840_2160_25fps_about.mp4");***/ /* Replace with your actual background image */
+/*** background-size: cover;***/ /* Cover the entire container */
+/***background-position: center;***/ /* Center the image */
+/*** z-index: -1;***/ /* Place the background image behind the video */
+/*** opacity: 0.7;***/ /* Adjust opacity as needed */
+/***}
+
+.choose-right .video-image a {
+  position: absolute;***/ /* Position the video play button */
+/***top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);***/ /* Center the play button */
+/***z-index: 1;***/ /* Place the play button on top */
+/***}***/
+
 /*=======================
 	End Why choose CSS
 =========================*/
@@ -4087,12 +4121,15 @@ body {
   width: 100%;
   max-width: 1200px; /* Adjust as needed */
 }
-
+.wrapper h5 {
+  text-align: center;
+  color: black;
+}
 .wrapper {
   position: relative;
   background-color: #1213142c;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: whitesmoke;
@@ -4126,9 +4163,10 @@ body {
 	height: auto;
 }*/
 .calculator {
-  background-color: #b2b9c0;
+  background-color: #1a76d1;
   padding: 15px;
-  border-radius: 10px;
+  color: #ffffff;
+  border-radius: 3px;
   box-shadow: 0 4px 8px rgba(153, 148, 148, 0.2);
 }
 .input-group {
@@ -4138,8 +4176,8 @@ input,
 select {
   width: 100%;
   padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
 }
 .result {
   font-size: 1em;
@@ -4150,13 +4188,13 @@ select {
   margin-top: 15px;
   padding: 10px;
   background: #6f86a5;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .freebies div {
   margin: 5px 0;
   padding: 5px;
   background: #aabdd1;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .assurance {
   margin-top: 15px;
@@ -4178,7 +4216,7 @@ select {
 }
 .savings-info {
   font-size: 0.8em;
-  color: rgb(70, 132, 224);
+  color: #ffffff;
   margin-top: 5px;
   font-weight: bold;
 }
@@ -5307,7 +5345,7 @@ select {
 
 /***FooterXXX2***/
 .site-footer {
-  background-color: #8897a7;
+  background-color: #1a76d1;
   padding: 45px 0 20px;
   font: size 14px;
   font-weight: 600;
@@ -5707,9 +5745,9 @@ select {
 
 /* Back to Top Button */
 /*** #product-backToTop {
-            display: none; /* Hidden by default */
-***/
-            /***position: fixed;
+            display: none;***/ /* Hidden by default */
+
+/***position: fixed;
             bottom: 30px;
             right: 30px;
             background-color: #007bff;
@@ -5730,8 +5768,8 @@ select {
 			scroll-behavior: smooth;
 		}
 		
-		/* Virtual Assistant Services Navigation */***/
-		/***.vas-nav {
+		/* Virtual Assistant Services Navigation */
+/***.vas-nav {
 			background: #f8f9fa;
 			padding: 10px;
 			text-align: center;
@@ -5760,23 +5798,23 @@ select {
 			color: white;
 			border-radius: 5px;
 		}***/
-		
-		/* Virtual Assistant Services Content */
-		/***#content {
+
+/* Virtual Assistant Services Content */
+/***#content {
 			padding: 20px;
 			min-height: 300px;
 			transition: opacity 0.3s ease-in-out;
 		}
 		.virtual-assistant-services .vas-service-item img {
-			width: 100%;***/    /* Makes the image fill the container width */
-			/***height: 100%; ***/  /* Makes the image fill the container height */
-			/***object-fit: cover;***/ /* Ensures the image covers the container without distortion */
-			/***border-radius: 8px;***/ /* Optional: Adds slightly rounded corners for a smoother look */
-		/***}
+			width: 100%;***/ /* Makes the image fill the container width */
+/***height: 100%; ***/ /* Makes the image fill the container height */
+/***object-fit: cover;***/ /* Ensures the image covers the container without distortion */
+/***border-radius: 8px;***/ /* Optional: Adds slightly rounded corners for a smoother look */
+/***}
 		
 		.virtual-assistant-services .vas-container-xxl {
 			max-width: 1400px;***/ /* Adjust as needed */
-			/***margin-left: auto;
+/***margin-left: auto;
 			margin-right: auto;
 		}
 		.virtual-assistant-services .vas-py-5{
@@ -5871,11 +5909,10 @@ select {
 			font-weight: 600!important;
 		}***/
 
-		/*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Virtual Assistant Services Section Styles
 --------------------------------------------------------------*/
 
-/* Your CSS Rules Here */
 /*--------------------------------------------------------------
 # Virtual Assistant Services Section Styles
 --------------------------------------------------------------*/
@@ -5962,13 +5999,25 @@ select {
   overflow: hidden;
   border-top-left-radius: 5px; /* Round the top corners */
   border-top-right-radius: 5px;
+  height: 200px; /* Adjust as needed */
+  width: 100%; /*Ensure image takes full width */
+  aspect-ratio: 16 / 9; /* Or auto based on your layout */
+  /* background-image: url("site_stock_images/virtualassistant1.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  /*object-fit: cover;*/ /* Cover entire container */
 }
 
 .vas-overflow-hidden img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
   width: 100%;
   height: 200px; /* you can change if you want */
-  object-fit: cover;
   transition: transform 0.3s ease; /* Image zoom effect */
+  display: block; /* Remove ay extra space below the image */
 }
 
 .vas-overflow-hidden:hover img {
@@ -6248,7 +6297,6 @@ select {
 	 Start blog-single section CSS
 =====================================*/
 
-/*** End/ Become a Partner Page ***/
 /* Styling for the blog post container */
 .blog-post-container {
   max-width: 800px; /* Adjust as needed */
@@ -6262,7 +6310,7 @@ select {
 
 .blog-post-container h1 {
   font-size: 2.2rem; /* Larger heading */
-  color: #333;
+  color: #888;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -6294,7 +6342,7 @@ select {
 
 .blog-post-content h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: #888;
   margin-top: 25px;
   margin-bottom: 10px;
 }

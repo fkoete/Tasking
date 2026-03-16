@@ -5398,6 +5398,33 @@ select {
 .footer-links.inline li {
   display: inline-block;
 }
+.footer-info-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+}
+.footer-info-links li {
+  display: inline-block;
+}
+.footer-info-links li:not(:last-child)::after {
+  content: "|";
+  margin: 0 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+}
+.footer-info-links a {
+  color: #fff;
+  font-size: small;
+}
+.footer-info-links a:active,
+.footer-info-links a:focus,
+.footer-info-links a:hover {
+  color: navy;
+  text-decoration: none;
+}
 .site-footer .social-icons {
   text-align: right;
 }

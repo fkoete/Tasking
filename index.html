@@ -17,21 +17,220 @@
 <!-- schema markup section-->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Tasker247",
-  "url": "https://www.tasker247.com",
-  "logo": "https://www.tasker247.com/logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+27-73-409-9565", "+27-63-590-4691"
-    "contactType": "Customer Service"
-  },
-  "sameAs": [
-    "https://www.facebook.com/tasker247",
-    "https://www.linkedin.com/company/tasker247"
-	"https://www.twitter.com/company/tasker247"
-  ]
+"@context":"https://schema.org",
+"@graph":[
+
+{
+"@type":"Organization",
+"@id":"https://www.tasker247.com/#organization",
+"name":"Tasker247",
+"url":"https://www.tasker247.com",
+"logo":"https://www.tasker247.com/images/logo.png",
+
+"contactPoint":[
+{
+"@type":"ContactPoint",
+"contactType":"customer support",
+"telephone":"+27734099565",
+"areaServed":"ZA",
+"availableLanguage":["English"]
+}
+],
+
+"sameAs":[
+"https://www.facebook.com/tasker247",
+"https://www.linkedin.com/company/tasker247"
+],
+
+"hasPolicy":[
+{
+"@type":"CreativeWork",
+"name":"PAIA Manual",
+"url":"https://drive.google.com/file/d/1HretIrk-czgFEdqORk7FJurHCnckaH1P/preview"
+},
+{
+"@type":"CreativeWork",
+"name":"Privacy Policy",
+"url":"https://www.tasker247.com/privacy-policy.html"
+},
+{
+"@type":"CreativeWork",
+"name":"Terms Of Service",
+"url":"https://www.tasker247.com/termsofservice.html"
+}
+]
+},
+
+{
+"@type":"WebSite",
+"@id":"https://www.tasker247.com/#website",
+"url":"https://www.tasker247.com",
+"name":"Tasker247",
+"publisher":{
+"@id":"https://www.tasker247.com/#organization"
+}
+},
+
+{
+"@type":"ProfessionalService",
+"@id":"https://www.tasker247.com/#professionalservice",
+"name":"Tasker247",
+"url":"https://www.tasker247.com",
+"provider":{
+"@id":"https://www.tasker247.com/#organization"
+},
+
+"serviceArea":[
+{"@type":"AdministrativeArea","name":"Gauteng"},
+{"@type":"AdministrativeArea","name":"Mpumalanga"},
+{"@type":"AdministrativeArea","name":"Limpopo"},
+{"@type":"AdministrativeArea","name":"North West"},
+{"@type":"AdministrativeArea","name":"Northern Cape"},
+{"@type":"AdministrativeArea","name":"Free State"},
+{"@type":"AdministrativeArea","name":"Eastern Cape"}
+],
+
+"areaServed":[
+
+{"@type":"City","name":"Johannesburg"},
+{"@type":"City","name":"Pretoria"},
+{"@type":"City","name":"Bronkhorstspruit"},
+
+{"@type":"City","name":"Port Elizabeth"},
+{"@type":"City","name":"Jeffreys Bay"},
+{"@type":"City","name":"Uitenhage"},
+{"@type":"City","name":"East London"},
+{"@type":"City","name":"Umtata"},
+
+{"@type":"City","name":"Nelspruit"},
+{"@type":"City","name":"Hazyview"},
+{"@type":"City","name":"Bushbuckridge"},
+{"@type":"City","name":"Barberton"},
+{"@type":"City","name":"KwaMhlanga"},
+{"@type":"City","name":"Siyabuswa"},
+{"@type":"City","name":"Witbank"},
+{"@type":"City","name":"Belfast"},
+
+{"@type":"City","name":"Rustenburg"},
+{"@type":"City","name":"Klerksdorp"},
+{"@type":"City","name":"Potchefstroom"}
+
+],
+
+"hasOfferCatalog":{
+"@type":"OfferCatalog",
+"name":"Tasker247 Business Support Services",
+
+"itemListElement":[
+
+{
+"@type":"Offer",
+"itemOffered":{
+"@type":"Service",
+"@id":"https://www.tasker247.com/services/virtual-administrative-services.html#service",
+"name":"Virtual Administrative Services",
+"url":"https://www.tasker247.com/services/virtual-administrative-services.html",
+"provider":{"@id":"https://www.tasker247.com/#organization"}
+}
+},
+
+{
+"@type":"Offer",
+"itemOffered":{
+"@type":"Service",
+"@id":"https://www.tasker247.com/services/company-compliance-governance-support.html#service",
+"name":"Company Compliance and Governance Support",
+"url":"https://www.tasker247.com/services/company-compliance-governance-support.html",
+"provider":{"@id":"https://www.tasker247.com/#organization"}
+}
+},
+
+{
+"@type":"Offer",
+"itemOffered":{
+"@type":"Service",
+"@id":"https://www.tasker247.com/services/business-administration-support.html#service",
+"name":"Business Administration Support",
+"url":"https://www.tasker247.com/services/business-administration-support.html",
+"provider":{"@id":"https://www.tasker247.com/#organization"}
+}
+}
+
+]
+}
+
+},
+
+{
+"@type":"LocalBusiness",
+"@id":"https://www.tasker247.com/#localbusiness-gauteng",
+"name":"Tasker247 Gauteng",
+"url":"https://www.tasker247.com",
+"telephone":"+27734099565",
+
+"address":{
+"@type":"PostalAddress",
+"addressCountry":"ZA",
+"addressRegion":"Gauteng"
+},
+
+"areaServed":[
+{"@type":"City","name":"Johannesburg"},
+{"@type":"City","name":"Pretoria"},
+{"@type":"City","name":"Bronkhorstspruit"}
+{"@type":"City","name":"Centurion"},
+{"@type":"City","name":"Midrand"},
+{"@type":"City","name":"Benoni"},
+{"@type":"City","name":"Boksburg"},
+{"@type":"City","name":"Germiston"},
+{"@type":"City","name":"Kempton Park"},
+{"@type":"City","name":"Vereeniging"},
+{"@type":"City","name":"Vanderbijlpark"},
+{"@type":"City","name":"Nigel"},
+{"@type":"City","name":"Springs"},
+{"@type":"City","name":"Ekurhuleni"},
+{"@type":"City","name":"Tshwane"},
+{"@type":"City","name":"Ekurhuleni"},
+{"@type":"City","name":"Tshwane"}
+]
+},
+
+{
+"@type":"LocalBusiness",
+"@id":"https://www.tasker247.com/#localbusiness-mpumalanga",
+"name":"Tasker247 Mpumalanga",
+"url":"https://www.tasker247.com",
+"telephone":"+27635904691",
+
+"address":{
+"@type":"PostalAddress",
+"addressCountry":"ZA",
+"addressRegion":"Mpumalanga"
+},
+
+"areaServed":[
+{"@type":"City","name":"Nelspruit"},
+{"@type":"City","name":"Hazyview"},
+{"@type":"City","name":"Bushbuckridge"},
+{"@type":"City","name":"Barberton"},
+{"@type":"City","name":"KwaMhlanga"},
+{"@type":"City","name":"Siyabuswa"},
+{"@type":"City","name":"Witbank"},
+{"@type":"City","name":"Belfast"}
+{"@type":"City","name":"Mbombela"},
+{"@type":"City","name":"Emalahleni"},
+{"@type":"City","name":"Middelburg"},
+{"@type":"City","name":"Standerton"},
+{"@type":"City","name":"Secunda"},
+{"@type":"City","name":"Delmas"},
+{"@type":"City","name":"Lydenburg"},
+{"@type":"City","name":"Sabie"},
+{"@type":"City","name":"Graskop"},
+{"@type":"City","name":"White River"}
+]
+}
+
+]
 }
 </script>
 <!-- End schema markup section-->
@@ -48,7 +247,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>Reliable and Professional Virtual Tasking Services, Business Administrative Solutions, Compliance and Corporate Governance Solutions</title>
+        <title>Reliable and Professional Virtual Tasking Services &nbsp Business Administrative Solutions &nbsp Compliance and Corporate Governance Solutions</title>
 		
 		<!-- Favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">

@@ -567,7 +567,7 @@ body {
   transition: all 0.4s ease;
   border-radius: 3px;
   border: none;
-  background: #fff;
+  background: #ffffff;
   color: #2c2d3f;
 }
 .header .search-form button {
@@ -629,6 +629,25 @@ body {
   padding: 0;
   line-height: 42px;
 }
+
+.slider .single-slider h2 {
+  font-size: 16px;
+  font-weight: 400: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.slider .single-slider hr{
+width:60px;
+height:3px;
+background:#2f6fed;
+border:none;
+margin:20px auto;
+opacity:0.6;
+}
+
 .slider .single-slider h1 span {
   color: #1a76d1;
 }
@@ -5140,6 +5159,29 @@ select {
   }
 }
 /* Hero Page Section */
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+line-height:1.2;
+}
+
+.hero h2{
+font-size:18px;
+margin-top:0;
+margin-bottom:20px;
+line-height:1.5;
+color:#5a6b7b;
+}
+
+.hero hr{
+width:60px;
+height:3px;
+background:#2f6fed;
+border:none;
+margin:20px auto;
+opacity:0.6;
+}
+
 .hero {
   /* height: 500px;*/
   background-size: cover;

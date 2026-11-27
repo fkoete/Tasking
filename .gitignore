@@ -1,1 +1,4 @@
 *.bak
+
+# Local-only pages not included in Git pushes
+/local-only/
